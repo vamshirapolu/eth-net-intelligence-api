@@ -19,8 +19,8 @@ echo "Public IP: $IP"
 if [[ -f $(which geth 2>/dev/null) ]]
 then
 	echo "Starting geth"
-	echo geth --rpc --bootnodes "enode://fc56b90c08a529abfcd0108cef2c1fb6ec3c40494b6c5c058061c32191bf60058b1d68f9796e099c424aa6ad46025bfe1603c765416590464e54bd073868ce0a@bootnode.blockchain.strues.com:80" --nat "extip:$IP"
-	geth --rpc --bootnodes "enode://fc56b90c08a529abfcd0108cef2c1fb6ec3c40494b6c5c058061c32191bf60058b1d68f9796e099c424aa6ad46025bfe1603c765416590464e54bd073868ce0a@bootnode.blockchain.strues.com:80" --nat "extip:$IP"
+	echo geth --datadir ./node --rpc --bootnodes "enode://fc56b90c08a529abfcd0108cef2c1fb6ec3c40494b6c5c058061c32191bf60058b1d68f9796e099c424aa6ad46025bfe1603c765416590464e54bd073868ce0a@$(ec2metadata --public-ipv4):80" --nat "extip:$(ec2metadata --public-ipv4)"
+	geth --datadir ./node --rpc --bootnodes "enode://fc56b90c08a529abfcd0108cef2c1fb6ec3c40494b6c5c058061c32191bf60058b1d68f9796e099c424aa6ad46025bfe1603c765416590464e54bd073868ce0a@$(ec2metadata --public-ipv4):80" --nat "extip:$(ec2metadata --public-ipv4)"
 
 elif [[ -f $(which eth 2>/dev/null) ]]
 then
