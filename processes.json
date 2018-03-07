@@ -33,10 +33,10 @@
       "RPC_HOST"        : "localhost",
       "RPC_PORT"        : "8545",
       "LISTENING_PORT"  : "30303",
-      "INSTANCE_NAME"   : "",
-      "CONTACT_DETAILS" : "",
-      "WS_SERVER"       : "wss://rpc.ethstats.net",
-      "WS_SECRET"       : "see http://forum.ethereum.org/discussion/2112/how-to-add-yourself-to-the-stats-dashboard-its-not-automatic",
+      "INSTANCE_NAME"   : "bootnode",
+      "CONTACT_DETAILS" : "Bootnode Strues",
+      "WS_SERVER"       : "ws://stats.blockchain.strues.com:80",
+      "WS_SECRET"       : "struesprivateblock",
       "VERBOSITY"       : 2
     }
   }
