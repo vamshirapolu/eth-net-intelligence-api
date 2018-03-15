@@ -35,7 +35,7 @@
       "LISTENING_PORT"  : "30303",
       "INSTANCE_NAME"   : "bootnode",
       "CONTACT_DETAILS" : "Bootnode Strues",
-      "WS_SERVER"       : "ws://stats.blockchain.strues.com:80",
+      "WS_SERVER"       : "http://stats.blockchain.strues.com",
       "WS_SECRET"       : "struesprivateblock",
       "VERBOSITY"       : 2
     }
